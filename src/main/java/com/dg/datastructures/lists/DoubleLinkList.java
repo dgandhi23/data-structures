@@ -13,6 +13,10 @@ package com.dg.datastructures.lists;
 public class DoubleLinkList<T> {
     DoubleListNode<T> head;
     DoubleListNode<T> tail;
+
+    public DoubleLinkList() {
+        head = tail = null;
+    }
     
     public void insert(T _data) {
         DoubleListNode<T> node = new DoubleListNode<>(_data);

@@ -7,6 +7,7 @@ package com.dg.datastructures;
 
 import com.dg.datastructures.lists.DoubleLinkList;
 import com.dg.datastructures.lists.SingleLinkList;
+import com.dg.datastructures.trees.BinarySearchTree;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -20,6 +21,7 @@ public class MainController {
         SingleLinkList<Integer> numList = new SingleLinkList<>();
         DoubleLinkList<String> strDList = new DoubleLinkList<>();
         DoubleLinkList<Integer> numDList = new DoubleLinkList<>();
+        BinarySearchTree<Integer> numBST = new BinarySearchTree<>();
         
         strList.insert("A");
         strList.display();
@@ -56,6 +58,31 @@ public class MainController {
         numDList.display();
         numDList.insert(4);
         numDList.display();
+        
+        numBST.insert(13);
+        numBST.display();
+        numBST.insert(3);
+        numBST.display();
+        numBST.insert(1);
+        numBST.display();
+        numBST.insert(2);
+        numBST.display();
+        numBST.insert(12);
+        numBST.display();
+        numBST.insert(10);
+        numBST.display();
+        numBST.insert(5);
+        numBST.display();
+        numBST.insert(8);
+        numBST.display();
+        numBST.insert(11);
+        numBST.display();
+        numBST.insert(14);
+        numBST.display();
+        numBST.insert(18);
+        numBST.display();
+        numBST.insert(16);
+        numBST.display();
         
         try {
             strList.delete();

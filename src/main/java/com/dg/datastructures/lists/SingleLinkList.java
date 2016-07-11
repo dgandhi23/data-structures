@@ -15,8 +15,7 @@ public class SingleLinkList<T> {
     SingleListNode<T> tail;
 
     public SingleLinkList() {
-        head = null;
-        tail = null;
+        head = tail = null;
     }
     
     public void insert(T _data) {
